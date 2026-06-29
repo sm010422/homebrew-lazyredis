@@ -1,26 +1,26 @@
 class Lazyredis < Formula
   desc "Lazygit-inspired terminal UI for Redis"
   homepage "https://github.com/sm010422/lazyredis"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.2/lazyredis_darwin_arm64.tar.gz"
-      sha256 "05f0125f1d4f4d8ca6d74fd707b085feacf7ed20af3f98f7e29e3fdb6442cb81"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.3/lazyredis_darwin_arm64.tar.gz"
+      sha256 "0cb1cb319e6c8178d2abc84fc53b70b864fab3e18242f4a445cb85bfd549cbb4"
     else
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.2/lazyredis_darwin_amd64.tar.gz"
-      sha256 "b804fe389ece1aee8d23b149c86050a6fb7f60850611e93826f223ea614b10ec"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.3/lazyredis_darwin_amd64.tar.gz"
+      sha256 "b964949e4dc4107ad516c49df2f5139fa7d3bd9b3476bdb642018526afc43947"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.2/lazyredis_linux_arm64.tar.gz"
-      sha256 "cc168af0c772196e5dadba285da49c25c47ebbb5e375c5ef60d9508f66f8611f"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.3/lazyredis_linux_arm64.tar.gz"
+      sha256 "a193698fd5141c08606699864613b76ecab468fd270670ee6aa6ad73688f1fbb"
     else
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.2/lazyredis_linux_amd64.tar.gz"
-      sha256 "d63b03435028efa3fc3ae8baaf25a45f08f6bf2f1e8b0b22690a5c8b0873f096"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.3/lazyredis_linux_amd64.tar.gz"
+      sha256 "1b7973756cf022715f3094ececfb31fe9a5b1cf17605d0f6edf53f99ac32bdba"
     end
   end
 
