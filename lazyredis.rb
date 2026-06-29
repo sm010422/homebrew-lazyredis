@@ -5,21 +5,21 @@
 class Lazyredis < Formula
   desc "Lazygit-inspired terminal UI for Redis"
   homepage "https://github.com/sm010422/lazyredis"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.0/lazyredis_darwin_amd64.tar.gz"
-      sha256 "162391f6ee0e5a6022da1ce42b60841c53e4c6c28b313ebcc1f952c138698711"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.1/lazyredis_darwin_amd64.tar.gz"
+      sha256 "51d292aba8e37f2cb637c092129b86635e1256cf4390073102dd1b1ec0467e47"
 
       define_method(:install) do
         bin.install "lazyredis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.0/lazyredis_darwin_arm64.tar.gz"
-      sha256 "b13e6b144f79f38ba7be82a425e7498c1d30b3bdda6842746d19db79a4dd76b8"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.1/lazyredis_darwin_arm64.tar.gz"
+      sha256 "0b87773c58aff05fd3a9c2ea695cd1b2aefdfb231217adcc98d07291701f9b5e"
 
       define_method(:install) do
         bin.install "lazyredis"
@@ -29,15 +29,15 @@ class Lazyredis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.0/lazyredis_linux_amd64.tar.gz"
-      sha256 "99627589c954caf19774e1d957e423908c37eae63f141e4771a257aea8a0af0a"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.1/lazyredis_linux_amd64.tar.gz"
+      sha256 "fbbb72246cf7216212bf0937d639ef60321a0b204ba1a4d19b2786f7f29bc976"
       define_method(:install) do
         bin.install "lazyredis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.0/lazyredis_linux_arm64.tar.gz"
-      sha256 "df4a09bdf05dc1690e48eee6d58ec0fe60fd70903ffc3716dd44737f243aaa03"
+      url "https://github.com/sm010422/lazyredis/releases/download/v0.4.1/lazyredis_linux_arm64.tar.gz"
+      sha256 "2701d6c91e2532e7c532c0f945f5078fe49136ce69de13aaf628379422232d18"
       define_method(:install) do
         bin.install "lazyredis"
       end
